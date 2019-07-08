@@ -20,7 +20,7 @@ require 'server/connectDB.php';
                     <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                    <i class="fa fa-envelope">Notifications</i>
                       <!-- Counter - Messages -->
-                      <span class="badge badge-danger badge-counter"><?php echo $count; ?></span>
+                      <span class="badge badge-danger badge-counter"><?php if ($count > 0) {echo $count;} ?></span>
                     </a>
                     <!-- Dropdown - Messages -->
                     <div class="dropdown-list dropdown-menu dropdown-menu shadow animated--grow-in" aria-labelledby="messagesDropdown">
